@@ -1,0 +1,76 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #181819;
+  height: 61px;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "SF Mono Heavy", sans-serif;
+  gap: 16px;
+
+}
+
+.nav__logo-main {
+  position: relative;
+}
+
+.nav__logo-part1 {
+  font-size: 48px;
+}
+
+.nav__logo-part2 {
+  position: absolute;
+  bottom: 6px;
+  right: -9px;
+  font-size: 24px;
+  color: #d0021b;
+}
+
+.nav__logo-text {
+  font-family: "SF Pro Rounded", sans-serif;
+  width: 54px;
+  font-size: 14px;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link {
+  transition: color 0.3s;
+  &:hover {
+    color: #d0021b;
+  }
+}
+
+.nav__icons {
+  line-height: 61px;
+}
+
+.nav__icon-search {
+  width: 20px;
+  height: 20px;
+}
+
+.nav__icon-account {
+  width: 20px;
+  height: 20px;
+
+  margin-left: 25px;
+}

@@ -1,6 +1,48 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "SF Mono Heavy";
   font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/SFMonoHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SFProDisplay-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Light Italic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/SFProDisplay-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SFProDisplay-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/SFProDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/SFProDisplay-Heavy.woff") format("woff");
 }

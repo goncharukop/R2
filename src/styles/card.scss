@@ -1,0 +1,25 @@
+.card {
+  display: block;
+  width: 220px;
+  padding: 20px 20px 40px;
+  background-color: #fff;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: color 0.8s;
+
+  &:hover {
+    color: #d0021b;
+  }
+}
+
+.card__image {
+  width: 80px;
+  height: 80px;
+}
+
+.card__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 10px;
+}
