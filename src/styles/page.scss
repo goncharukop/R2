@@ -1,16 +1,40 @@
 .page {
   width: 1440px;
   margin: 0 auto;
+
+  @media (max-width: 320px) {
+    width: 320px;
+  }
+
+  &__burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page__nav {
   padding: 0 250px;
+
+  @media (max-width: 320px) {
+    padding: 0 16px;
+  }
 }
 
 .page__section {
   margin: 80px auto 0;
+
+  @media (max-width: 320px) {
+    margin: 40px auto 0;
+    padding: 0 16px;
+  }
 }
 
 .page__footer {
   margin: 80px auto 30px;
+
+  @media (max-width: 320px) {
+    margin: 40px auto 15px;
+    padding: 0 16px 16px;
+  }
 }

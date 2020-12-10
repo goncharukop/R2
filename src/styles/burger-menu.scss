@@ -1,0 +1,113 @@
+.burger-menu {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+
+  background-color: $c-aqua;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+
+  z-index: 2;
+  transform: translateX(100vw);
+  transition: transform $duration;
+
+  @media (min-width: 321px) {
+    display: none;
+  }
+
+  &__toggler {
+    display: none;
+    position: fixed;
+  
+    right: 8px;
+    top: 40px;
+    z-index: 3;
+  }
+  
+  &__label {
+    display: none;
+    position: fixed;
+    right: 8px;
+    top: 40px;
+    
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/burger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+
+    cursor: pointer;
+  
+    z-index: 3;
+  
+    @media (max-width: 320px) {
+      display: block;
+    }
+  }
+  
+  &__logo {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "SF Mono Heavy", sans-serif;
+    gap: 16px;
+  }
+
+  &__logo-main {
+    position: relative;
+  }
+
+  &__logo-part1 {
+    font-size: 72px;
+    color: white;
+  }
+
+  &__logo-part2 {
+    position: absolute;
+    bottom: 4px;
+    right: -12px;
+    font-size: 36px;
+    color: $c-red;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  &__item {
+    width: 100%;
+    font-size: 48px;
+
+    cursor: pointer;
+ 
+    margin-top: 30px;
+  
+    transition: transform $duration;
+  
+    &:hover {
+      transform: scale(1.05);
+      font-weight: 500;
+    }
+  }
+  
+  &__link {
+    &--active {
+      font-weight: 500;
+    }
+  }
+}
+
+.burger-menu__toggler:checked + .burger-menu__label {
+  background-image: url(../images/burger-x.svg);
+  opacity: 1;
+}
+
+.burger-menu__toggler:checked ~ .burger-menu {
+  transform: translateX(0);
+}

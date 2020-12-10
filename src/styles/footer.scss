@@ -1,15 +1,27 @@
 .footer {
   width: 408px;
   font-size: 14px;
+
+  @media (max-width: 320px) {
+    width: 90%;
+  }
 }
 
 .footer__text {
-  columns: #969696;
+  color: #969696;
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .footer__list {
   display: flex;
+  justify-content: center;
   gap: 15px;
+  margin-top: 10px;
 }
 
 .footer__item {
@@ -23,12 +35,12 @@
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: red;
+  background-color: $c-red;
   opacity: 0;
 }
 
 .footer__link {
-  color: #d0021b;
+  color: $c-red;
   &:hover {
     &::after {
       opacity: 0.6;

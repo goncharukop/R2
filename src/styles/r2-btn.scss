@@ -7,7 +7,6 @@
   text-align: center;
   line-height: 40px;
   border-radius: 8px;
-  margin-top: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 
@@ -16,20 +15,48 @@
   }
 }
 
-.r2-btn_aqua {
-  color: #50e3c2;
-  background-color: rgba($color: #50e3c2, $alpha: 0.1);
+.r2-btn-right,
+.r2-btn-left {
+  width: 36px;
+  height: 36px;
+  background-color: rgba($color: $c-red, $alpha: 0.1);
+  color: $c-red;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color, color 0.3s;
 
   &:hover {
-    background-color: rgba($color: #50e3c2, $alpha: 1);
+    background-color: rgba($color: $c-red, $alpha: 1);
+    color: white;
+  }
+}
+
+.r2-btn-left::after {
+  content: "<";
+}
+
+.r2-btn-right::after {
+  content: ">";
+}
+
+.r2-btn_aqua {
+  color: $c-aqua;
+  background-color: rgba($color: $c-aqua, $alpha: 0.1);
+
+  &:hover {
+    background-color: rgba($color: $c-aqua, $alpha: 1);
   }
 }
 
 .r2-btn_red {
-  color: #d0021b;
-  background-color: rgba($color:#d0021b, $alpha: 0.1);
+  color: $c-red;
+  background-color: rgba($color: $c-red, $alpha: 0.1);
 
   &:hover {
-    background-color: rgba($color:#d0021b, $alpha: 1);
+    background-color: rgba($color: $c-red, $alpha: 1);
   }
 }

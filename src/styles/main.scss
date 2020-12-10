@@ -12,14 +12,25 @@
 @import "benefit";
 @import "footer";
 @import "r2-btn";
+@import "slider";
+@import "burger-menu";
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $c-gray;
   font-family: "SF Pro Display", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }

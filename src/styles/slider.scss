@@ -1,0 +1,17 @@
+.slider-container,
+.slider2-container {
+  overflow-x: hidden;
+}
+
+.slider-track,
+.slider2-track {
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.slider-item,
+.slider2-item {
+  margin-right: 20px;
+}

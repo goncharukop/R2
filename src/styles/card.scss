@@ -1,21 +1,33 @@
 .card {
   display: block;
-  width: 220px;
+  min-width: 220px;
   padding: 20px 20px 40px;
+  color: #000;
   background-color: #fff;
   border-radius: 24px;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: transform $duration, color $duration;
 
   &:hover {
-    color: #d0021b;
+    color: $c-red;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+  }
+
+  @media (max-width: 320px) {
+    min-width: 134px;
+    padding: 17px;
   }
 }
 
 .card__image {
   width: 80px;
   height: 80px;
+
+  @media (max-width: 320px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .card__text {
@@ -23,4 +35,8 @@
   font-weight: 500;
   line-height: 24px;
   margin-top: 10px;
+
+  @media (max-width: 320px) {
+    display: none;
+  }
 }

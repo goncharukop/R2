@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  color: #fff;
+  color: white;
   background-color: #181819;
   height: 61px;
 }
@@ -12,7 +12,6 @@
   justify-content: space-evenly;
   font-family: "SF Mono Heavy", sans-serif;
   gap: 16px;
-
 }
 
 .nav__logo-main {
@@ -28,7 +27,7 @@
   bottom: 6px;
   right: -9px;
   font-size: 24px;
-  color: #d0021b;
+  color: $c-red;
 }
 
 .nav__logo-text {
@@ -45,7 +44,12 @@
   width: 460px;
   font-size: 18px;
   font-weight: 500;
+  line-height: 61px;
   color: #f5f5f5;
+
+  @media (max-width: 320px) {
+    display: none;
+  }
 }
 
 .nav__item {
@@ -55,7 +59,7 @@
 .nav__link {
   transition: color 0.3s;
   &:hover {
-    color: #d0021b;
+    color: $c-red;
   }
 }
 

@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body class="page">
+
+    <input
+      type="checkbox"
+      name="checkbox"
+      id="toggler"
+      class="burger-menu__toggler"
+    >
+    <label for="toggler" class="burger-menu__label">
+    </label>
+
+    <nav class="burger-menu page__burger-menu">
+      <div class="burger-menu__logo">
+        <div class="burger-menu__logo-main">
+          <div class="burger-menu__logo-part1">
+            R
+          </div>
+          <div class="burger-menu__logo-part2">
+            2
+          </div>
+        </div>
+      </div>
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#browse">
+            Browse
+          </a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#az">
+            A-Z Index
+          </a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#about">
+            About
+          </a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#faq">
+            FAQs
+          </a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#guide">
+            User Guide
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <nav class="nav page__nav">
       <div class="nav__logo">
         <div class="nav__logo-main">
@@ -23,27 +73,27 @@
       </div>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="">
+          <a class="nav__link" href="#browse">
             Browse
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="">
+          <a class="nav__link" href="#az">
             A-Z Index
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="">
+          <a class="nav__link" href="#about">
             About
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="">
+          <a class="nav__link" href="#faq">
             FAQs
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="">
+          <a class="nav__link" href="#guide">
             User Guide
           </a>
         </li>
@@ -61,9 +111,7 @@
             src="./images/account_circle-white-18dp.svg"
             alt="account logo"
           >
-
         </div>
-
       </div>
     </nav>
 
@@ -87,9 +135,9 @@
           go to the reviews section
         </div>
         <div class="main-section__top-btn-arrows">
-          <div class="main-section__top-btn-arrow-left">
+          <div class="r2-btn-left">
           </div>
-          <div class="main-section__top-btn-arrow-right">
+          <div class="r2-btn-right">
           </div>
         </div>
       </div>
@@ -121,16 +169,16 @@
       </div>
     </section>
 
-    <section class="page__section recently">
+    <section class="page__section recently" id="browse">
       <div class="recently__title">
         Recently added
       </div>
-      <div class="slider">
-        <div class="recently__btn-left"></div>
-        <div class="recently__btn-right"></div>
-        <div class="recently__slider-wrap">
-          <div class="recently__slider">
-            <div class="recently__card card">
+      <div>
+        <div class="recently__btn-left r2-btn-left slider__btn-prev"></div>
+        <div class="recently__btn-right r2-btn-right slider__btn-next"></div>
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card1.png"
@@ -140,7 +188,7 @@
                 Sepsis Management in Resource-limited Settings
               </p>
             </div>
-            <div class="recently__card card">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card2.png"
@@ -150,7 +198,7 @@
                 Tuberculosis in Adults and Children
               </p>
             </div>
-            <div class="recently__card card">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card3.png"
@@ -160,7 +208,7 @@
                 Red Book Atlas of Pediatric Infectious Diseases
               </p>
             </div>
-            <div class="recently__card card">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card4.png"
@@ -170,7 +218,7 @@
                 Mandell, Douglas, and Bennett's Principles and Practice of…
               </p>
             </div>
-            <div class="recently__card card">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card1.png"
@@ -180,7 +228,7 @@
                 Sepsis Management in Resource-limited Settings
               </p>
             </div>
-            <div class="recently__card card">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card2.png"
@@ -190,7 +238,7 @@
                 Tuberculosis in Adults and Children
               </p>
             </div>
-            <div class="recently__card card">
+            <div class="slider-item card">
               <img
                 class="card__image"
                 src="./images/card3.png"
@@ -205,7 +253,7 @@
       </div>
     </section>
 
-    <section class="expand page__section">
+    <section class="expand page__section" id="faq">
       <div class="expand__top">
         <div class="expand__top-title">
           Expand Your Library Beyond eBooks...
@@ -222,7 +270,7 @@
           </div>
         </div>
       </div>
-      <div class="expand__cards">
+      <div class="expand__cards" id="guide">
         <div class="expand__card">
           <img
             class="expand__card-logo"
@@ -267,16 +315,16 @@
       </div>
     </section>
 
-    <section class="page__section most-popular">
+    <section class="page__section most-popular" id="az">
       <div class="most-popular__title">
         Most popular
       </div>
-      <div class="slider">
-        <div class="most-popular__btn-left"></div>
-        <div class="most-popular__btn-right"></div>
-        <div class="most-popular__slider-wrap">
-          <div class="most-popular__slider">
-            <div class="most-popular__card card">
+      <div>
+        <div class="most-popular__btn-left r2-btn-left slider2__btn-prev"></div>
+        <div class="most-popular__btn-right r2-btn-right slider2__btn-next"></div>
+        <div class="slider2-container most-popular__slider">
+          <div class="slider2-track">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card1.png"
@@ -286,7 +334,7 @@
                 Sepsis Management in Resource-limited Settings
               </p>
             </div>
-            <div class="most-popular__card card">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card2.png"
@@ -296,7 +344,7 @@
                 Tuberculosis in Adults and Children
               </p>
             </div>
-            <div class="most-popular__card card">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card3.png"
@@ -306,7 +354,7 @@
                 Red Book Atlas of Pediatric Infectious Diseases
               </p>
             </div>
-            <div class="most-popular__card card">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card4.png"
@@ -316,7 +364,7 @@
                 Mandell, Douglas, and Bennett's Principles and Practice of…
               </p>
             </div>
-            <div class="most-popular__card card">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card1.png"
@@ -326,7 +374,7 @@
                 Sepsis Management in Resource-limited Settings
               </p>
             </div>
-            <div class="most-popular__card card">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card2.png"
@@ -336,7 +384,7 @@
                 Tuberculosis in Adults and Children
               </p>
             </div>
-            <div class="most-popular__card card">
+            <div class="slider2-item card">
               <img
                 class="card__image"
                 src="./images/card3.png"
@@ -372,7 +420,7 @@
       </div>
     </section>
 
-    <section class="benefit page__section">
+    <section class="benefit page__section" id="about">
       <div class="benefit__left">
         <div class="benefit__title">
           Benefits of eContent and the R2 Digital Library
