@@ -1,0 +1,37 @@
+.featured {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 60px 60px 0;
+  height: 380px;
+}
+
+.featured__text {
+  width: 410px;
+}
+
+.featured__title {
+  font-family: "SF Pro Display Light Italic", sans-serif;
+  font-size: 24px;
+  color: #d0021b;
+}
+
+.featured__title-book {
+  font-weight: 900;
+  font-size: 48px;
+  margin-top: 5px;
+}
+
+.featured__btn {
+  margin-top: 20px;
+}
+
+.featured__img {
+  width: 300px;
+  height: 320px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 0 50px rgba(245, 175, 34, 0.5);
+}

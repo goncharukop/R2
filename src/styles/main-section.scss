@@ -44,27 +44,7 @@
 }
 
 .main-section__top-btn {
-  width: 240px;
-  height: 40px;
-
-  background-color: rgba($color: #d0021b, $alpha: 0.1);
-  color: #d0021b;
-  border-radius: 8px;
-
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color, color 0.3s;
-
   margin-top: 20px;
-
-  &:hover {
-    background-color: rgba($color: #d0021b, $alpha: 1);
-    color: white;
-  }
 }
 
 .main-section__top-btn-arrows {
@@ -87,7 +67,7 @@
   line-height: 36px;
   text-align: center;
   cursor: pointer;
-  transition: background-color, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover {
     background-color: rgba($color: #d0021b, $alpha: 1);
@@ -131,23 +111,7 @@
 }
 
 .main-section__left-btn {
-  width: 230px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 8px;
-  background-color: rgba($color:#50e3c2, $alpha: 0.1);
-  text-transform: uppercase;
-  cursor: pointer;
   margin-top: 40px;
-
-  transition: background-color, color 0.3s;
-
-  &:hover {
-    background-color: rgba($color: #50e3c2, $alpha: 1);
-    color: white;
-  }
 }
 
 .main-section__right {

@@ -5,10 +5,11 @@
   background-color: #fff;
   border-radius: 24px;
   cursor: pointer;
-  transition: color 0.8s;
+  transition: color 0.3s;
 
   &:hover {
     color: #d0021b;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   }
 }
 
