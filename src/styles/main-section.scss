@@ -6,143 +6,143 @@
   @media (max-width: 320px) {
     width: 100%;
   }
-}
 
-.main-section__top {
-  background-color: white;
-  border-radius: 24px;
-  padding: 60px 20px 20px 60px;
-
-  @media (max-width: 320px) {
-    padding: 20px;
+  &__top {
+    background-color: white;
+    border-radius: 24px;
+    padding: 60px 20px 20px 60px;
+  
+    @media (max-width: 320px) {
+      padding: 20px;
+    }
   }
-}
-
-.main-section__top-logo {
-  font-family: "SF Mono Heavy", sans-serif;
-  display: flex;
-  position: absolute;
-  right: 85px;
-  top: -100px;
-  opacity: 0.1;
-
-  @media (max-width: 320px) {
-    right: 42px;
-    top: -50px;
+  
+  &__top-logo {
+    font-family: "SF Mono Heavy", sans-serif;
+    display: flex;
+    position: absolute;
+    right: 85px;
+    top: -100px;
+    opacity: 0.1;
+  
+    @media (max-width: 320px) {
+      right: 42px;
+      top: -50px;
+    }
   }
-}
-
-.main-section__top-logo-part1 {
-  font-size: 200px;
-
-  @media (max-width: 320px) {
-    font-size: 100px;
+  
+  &__top-logo-part1 {
+    font-size: 200px;
+  
+    @media (max-width: 320px) {
+      font-size: 100px;
+    }
   }
-}
-
-.main-section__top-logo-part2 {
-  position: absolute;
-  font-size: 80px;
-  color: $c-red;
-  bottom: 18px;
-  right: -25px;
-
-  @media (max-width: 320px) {
-    font-size: 40px;
-    bottom: 9px;
-    right: -12px;
+  
+  &__top-logo-part2 {
+    position: absolute;
+    font-size: 80px;
+    color: $c-red;
+    bottom: 18px;
+    right: -25px;
+  
+    @media (max-width: 320px) {
+      font-size: 40px;
+      bottom: 9px;
+      right: -12px;
+    }
   }
-}
-
-.main-section__top-text {
-  font-family: "SF Pro Display Light Italic", sans-serif;
-  color: $c-red;
-  font-size: 24px;
-
-  @media (max-width: 320px) {
+  
+  &__top-text {
+    font-family: "SF Pro Display Light Italic", sans-serif;
+    color: $c-red;
+    font-size: 24px;
+  
+    @media (max-width: 320px) {
+      font-size: 14px;
+    }
+  }
+  
+  &__top-title {
+    width: 530px;
+    font-weight: 900;
+    font-size: 48px;
+  
+    @media (max-width: 320px) {
+      font-size: 24px;
+      width: 100%;
+    }
+  }
+  
+  &__top-btn {
+    margin-top: 20px;
+  }
+  
+  &__top-btn-arrows {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  &__left {
+    width: 460px;
+    padding: 60px;
+    border-radius: 24px;
+    background-color: $c-dark-blue;
+    color: $c-aqua;
+  
+    @media (max-width: 320px) {
+      width: 100%;
+      padding: 25px;
+    }
+  }
+  
+  &__left-title {
+    font-weight: 500;
     font-size: 14px;
   }
-}
-
-.main-section__top-title {
-  width: 530px;
-  font-weight: 900;
-  font-size: 48px;
-
-  @media (max-width: 320px) {
-    font-size: 24px;
-    width: 100%;
+  
+  &__left-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
   }
-}
-
-.main-section__top-btn {
-  margin-top: 20px;
-}
-
-.main-section__top-btn-arrows {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.main-section__bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.main-section__left {
-  width: 460px;
-  padding: 60px;
-  border-radius: 24px;
-  background-color: $c-dark-blue;
-  color: $c-aqua;
-
-  @media (max-width: 320px) {
-    width: 100%;
-    padding: 25px;
+  
+  &__left-btn {
+    margin-top: 40px;
   }
-}
-
-.main-section__left-title {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.main-section__left-text {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: white;
-  margin-top: 10px;
-}
-
-.main-section__left-btn {
-  margin-top: 40px;
-}
-
-.main-section__right {
-  width: 460px;
-  background-color: white;
-  border-radius: 24px;
-  padding: 60px 60px 15px;
-
-  @media (max-width: 320px) {
-    display: none;
+  
+  &__right {
+    width: 460px;
+    background-color: white;
+    border-radius: 24px;
+    padding: 60px 60px 15px;
+  
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
-}
-
-.main-section__right-title {
-  font-size: 14px;
-  font-weight: 500;
-  color: $c-red;
-}
-
-.main-section__right-text {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  margin-top: 10px;
+  
+  &__right-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: $c-red;
+  }
+  
+  &__right-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
 }

@@ -8,10 +8,28 @@
   line-height: 40px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color $duration, color $duration;
 
   &:hover {
     color: white;
+  }
+
+  &_aqua {
+    color: $c-aqua;
+    background-color: rgba($color: $c-aqua, $alpha: 0.1);
+  
+    &:hover {
+      background-color: rgba($color: $c-aqua, $alpha: 1);
+    }
+  }
+  
+  &_red {
+    color: $c-red;
+    background-color: rgba($color: $c-red, $alpha: 0.1);
+  
+    &:hover {
+      background-color: rgba($color: $c-red, $alpha: 1);
+    }
   }
 }
 
@@ -27,7 +45,7 @@
   line-height: 36px;
   text-align: center;
   cursor: pointer;
-  transition: background-color, color 0.3s;
+  transition: background-color $duration, color $duration;
 
   &:hover {
     background-color: rgba($color: $c-red, $alpha: 1);
@@ -41,22 +59,4 @@
 
 .r2-btn-right::after {
   content: ">";
-}
-
-.r2-btn_aqua {
-  color: $c-aqua;
-  background-color: rgba($color: $c-aqua, $alpha: 0.1);
-
-  &:hover {
-    background-color: rgba($color: $c-aqua, $alpha: 1);
-  }
-}
-
-.r2-btn_red {
-  color: $c-red;
-  background-color: rgba($color: $c-red, $alpha: 0.1);
-
-  &:hover {
-    background-color: rgba($color: $c-red, $alpha: 1);
-  }
 }

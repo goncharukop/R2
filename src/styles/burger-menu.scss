@@ -5,7 +5,6 @@
   flex-direction: column;
 
   background-color: $c-aqua;
-  font-size: 18px;
   text-transform: uppercase;
   text-align: left;
   color: white;
@@ -53,7 +52,6 @@
     display: flex;
     justify-content: space-evenly;
     font-family: "SF Mono Heavy", sans-serif;
-    gap: 16px;
   }
 
   &__logo-main {
@@ -83,11 +81,8 @@
   &__item {
     width: 100%;
     font-size: 48px;
-
     cursor: pointer;
- 
     margin-top: 30px;
-  
     transition: transform $duration;
   
     &:hover {
